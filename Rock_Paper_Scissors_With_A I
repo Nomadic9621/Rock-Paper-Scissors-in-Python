@@ -1,0 +1,36 @@
+import random
+
+Player = input(" Player Make Yur Move ").lower()
+rand_num = random.randint(0,2)
+
+if rand_num == 0:
+  Computer = "rock"
+elif rand_num == 1:
+  Computer = "paper"
+else:
+  Computer = "Scissors"
+print(f"Computer Move " {Computer} ")
+
+if Player == Computer:
+  print("It's Tie")
+elif Player == "rock":
+  if Computer == "scissors":
+    print("Player Wins !!!")
+elif Computer == "Paper":
+  print("Computer Wins !!!")
+  
+elif Player == "paper":
+  if Computer == "scissors":
+    print("Computer Wins !!!")
+elif Computer == "rock":
+  print("Player Wins !!!")
+  
+elif Player == "scissors":
+  if Computer == "rock":
+    print("Computer Wins !!!")
+elif Computer == "paper":
+  print("Player Wins")
+  
+  
+else:
+  print("Some Thing Went Wrong")
